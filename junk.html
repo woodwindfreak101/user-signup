@@ -1,0 +1,39 @@
+signup_form = """
+    <h1>Signup</h1>
+    <style>
+        .error {{ color: red; }}
+    </style>
+    <form method='POST'>
+        <label>Username
+            <input name="username" type="text" value='{username}' />
+        </label>
+        <p class="error">{username_error}</p>
+
+        <label>Password
+            <input name="user_password" type="password" value='{user_password}' />            
+        </label>
+        <p class="error">{user_password_error}</p>
+
+        <label>Verify Password
+            <input name="verify_user_password" type="password" value='{verify_user_password}' />
+        </label>
+        <p class="error">{user_password_error}</p>
+
+        <label>Email
+            <input name="user_email" type="text" />
+        </label>
+        <p class="error">{user_email_error}</p>
+        <input type="submit" value="Signup" />
+    </form>
+    """
+
+    
+
+welcome_username = """
+<!doctype html>
+<html>
+    <body>
+            <h1>Welcome, {username}</h1>
+    </body>
+</html>
+"""    
